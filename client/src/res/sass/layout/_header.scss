@@ -1,29 +1,21 @@
 .header {
-    height: 30rem;
+    
+    font-size: 1.4rem;
+    height: 7rem;
     background-color: #fff;
     border-bottom: var(--color-grey-light-2);
-    
-    @media only screen and (min-resolution: 192dpi) and (min-width: 37.5em),
-           only screen and (-webkit-min-device-pixel-ratio: 2) and (min-width: 37.5em),
-           only screen and (min-width: 125em) {
-        
-    }
+    display: flex;
+    // Align in main axis: X
+    justify-content: space-between;
 
-    &__logo-box {
-        position: absolute;
-        top: 4rem;
-        left: 4rem;
-    }
+    // Align in cross axis: Y
+    align-items: center;
+   
+}
 
-    &__logo {
-        height: 3.5rem;
-    }
+.logo {
+    height: 4rem;
+    transform: translateY(-.75rem);
     
-    &__text-box {
-        position: absolute;
-        top: 40%;
-        left: 50%;
-        transform: translate(-50%, -50%);
-        text-align: center;
-    }
+    margin-left: 2rem;
 }

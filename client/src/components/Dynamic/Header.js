@@ -4,8 +4,8 @@ import { Link } from 'react-router-dom';
 import Payments from './Payments';
 import '../../res/css/style.css';
 
-import logo from '../../res/img/logo.png';
-import userPhoto from "../../res/img/user.jpg";
+import logo from '../../res/img/logo2.png';
+import userPhoto from "../../res/img/user.png";
 import sprite from "../../res/img/sprite.svg";
 
 class Header extends Component {
@@ -26,8 +26,8 @@ class Header extends Component {
         // console.log(this.props.auth);
         // console.log(this.props);
         return (
-          <div>
-            <div className="navbar">
+          
+            <div className="header">
               {/* <Link to={this.props.auth ? '/surveys' : '/'} className="navbar__brand">
                         AftoflBIG5
                     </Link> */}
@@ -36,7 +36,7 @@ class Header extends Component {
               <form action="#" className="search">
                 <input
                   type="text"
-                  className="input"
+                  className="search__input"
                   placeholder="Search Here"
                 />
                 <button className="search__button">
@@ -55,7 +55,7 @@ class Header extends Component {
                   </svg>
                   <span className="user-nav__notification">7</span>
                 </div>
-                <div className="user-nav__iconbox">
+                <div className="user-nav__icon-box">
                   <svg className="user-nav__icon">
                     <use href={sprite + "#icon-chat"} />
                   </svg>
@@ -72,11 +72,6 @@ class Header extends Component {
               </nav>
             </div>
 
-            {/* <ul className="right"></ul> */}
-
-            {/* <a href="/auth/google">Login with Google</a> */}
-            {/* {this.renderContent()} */}
-          </div>
         );
     }
 }
@@ -89,3 +84,8 @@ function mapStateToProps({ auth }) {
 }
 
 export default connect(mapStateToProps)(Header);
+
+{/* <ul className="right"></ul> */ }
+
+{/* <a href="/auth/google">Login with Google</a> */ }
+{/* {this.renderContent()} */ }

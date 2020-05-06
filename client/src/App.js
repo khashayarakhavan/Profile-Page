@@ -4,6 +4,7 @@ import { connect } from 'react-redux';
 import * as actions from './actions';
 
 import Header from './components/Dynamic/Header';
+import SideNav from './components/Dynamic/SideNav';
 import Landing from './components/Dynamic/Landing';
 import SurveyNew from './components/surveys/SurveyNew';
 import Dashboard from './components/Dynamic/Dashboard';
@@ -18,14 +19,11 @@ class App extends Component {
       <div>
       <BrowserRouter>
         <div className="container">
-            <header className="header">
-            Header Part
+            <header>
             <Header/>
             </header>
             <div class="content">
-              <nav className="sidebar">
-                Navigation
-              </nav>
+              <SideNav/>
               <main className="hotel-view">
                 Hotel View
               </main>
