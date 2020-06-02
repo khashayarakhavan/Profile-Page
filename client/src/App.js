@@ -5,7 +5,8 @@ import * as actions from './actions';
 
 import Header from './components/Dynamic/Header';
 import SideNav from './components/Dynamic/SideNav';
-import Landing from './components/Dynamic/Landing';
+import HotelView from './components/Dynamic/HotelView';
+import Navigation from './components/Static/navigation';
 import SurveyNew from './components/surveys/SurveyNew';
 import Dashboard from './components/Dynamic/Dashboard';
 
@@ -19,13 +20,14 @@ class App extends Component {
       <div>
       <BrowserRouter>
         <div className="container">
+            {/* <Navigation /> */}
             <header>
             <Header/>
             </header>
             <div class="content">
               <SideNav/>
-              <main className="hotel-view">
-                Hotel View
+              <main>
+              <HotelView/>
               </main>
             </div>
 
