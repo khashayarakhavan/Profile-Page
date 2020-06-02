@@ -10,7 +10,22 @@
     cursor: pointer;
     transition: all .2s;
 
+    & span {
+        margin-left: .3rem;
+    }
+
     &:hover {
         color: var(--color-grey-dark-1);
+        
+        span {
+            margin-left: .8rem;
+            transition: margin-left .2s;
+        }
+    }
+
+    &:focus {
+        outline: none;
+        animation: pulsate 1s infinite; 
+        
     }
 }
