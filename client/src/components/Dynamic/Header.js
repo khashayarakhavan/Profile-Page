@@ -28,10 +28,6 @@ class Header extends Component {
         return (
           
             <div className="header">
-              {/* <Link to={this.props.auth ? '/surveys' : '/'} className="navbar__brand">
-                        AftoflBIG5
-                    </Link> */}
-
               <img src={logo} alt="trillo logo" className="logo" />
               <form action="#" className="search">
                 <input

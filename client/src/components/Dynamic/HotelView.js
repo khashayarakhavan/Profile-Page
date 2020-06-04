@@ -131,9 +131,9 @@ const Template = () => {
 
             <div className="cta">
                 <h2 className="cta__book-now">We Have special rooms for free!</h2>
-                <button className="btn">
-                    <span className="btn__visible">Book Now!</span>
-                    <span className="btn__invisible">Only 5 rooms left</span>
+                <button className="btn-changing">
+                    <span className="btn-changing__visible">Book Now!</span>
+                    <span className="btn-changing__invisible">Only 5 rooms left</span>
                     
                 </button>
             </div>

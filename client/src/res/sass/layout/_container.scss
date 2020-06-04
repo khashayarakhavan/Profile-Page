@@ -5,4 +5,12 @@
     background-color: var(--color-grey-light-2);
     box-shadow: var(--shadow-dark);
     min-height: 50rem;
+
+    @include respond(large-1) {
+        margin: 0;
+
+        // This code is to make sure there is no space around this container.
+        max-width: 100%;
+        width: 100%;
+    }
 }

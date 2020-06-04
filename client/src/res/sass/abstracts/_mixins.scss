@@ -48,4 +48,23 @@ ORDER: Base + Typography > General layout + Grid > Page layout > Components
     @if $breakpoint == desk-big {
         @media only screen and (min-width: 100em) { @content }; // 1600px
     }
+    @if $breakpoint == large-1 {
+        @media only screen and (max-width: 75em) { @content }; // 1200px
+    }
+    @if $breakpoint == large-2 {
+        @media only screen and (max-width: 71.875em) { @content }; // 1150px
+    }
+    @if $breakpoint == medium-1 {
+        @media only screen and (max-width: 59.375em) { @content }; // 950px
+    }
+    @if $breakpoint == medium-2 {
+        @media only screen and (max-width: 46.875em) { @content }; // 750px
+    }
+    @if $breakpoint == small-1 {
+        @media only screen and (max-width: 40.625em) { @content }; // 650px
+    }
+    @if $breakpoint == small-2 {
+        @media only screen and (max-width: 34.375em) { @content }; // 550px
+    }
+
 }

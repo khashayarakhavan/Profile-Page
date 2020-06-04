@@ -3,9 +3,19 @@
     flex: 0 0 40%;
     display: flex;
     //Main Axis
-    justify-content: center;
+    justify-content: space-evenly;
     //Cross Axis
     align-items: center;
+    
+    @include respond(small-2) {
+        order: 1;
+        flex: 0 0 80%;
+
+        // The next two lines center the search item in the second line.
+        margin-left: 50%;
+        transform: translate(-50%);
+        
+    }
 
     &__input {
         font-family: inherit;
@@ -16,9 +26,11 @@
         padding: .7rem 2rem;
         border-radius: 100px;
         width: 90%;
+      
         transition: all .2s;
-        margin-right: -3.25rem;
-
+        
+        // Use negative margin to Move input to the right --> magnifier icon will be inside the search bar.
+        
         &:focus{
             outline: none;
             width: 100%;
@@ -33,14 +45,21 @@
     }
 
     &__input:focus + &__button {
-        background-color: var(--color-grey-light-3);  
+        background-color: var(--color-grey-light-3); 
+        
+        @include respond(small-2) {
+            margin-left: -3rem;
+        }
+
+        // Use negative margin to move magnifier icon to the right side when input is focused.
+        
     }
 
     &__button {
+        margin-left: -5rem;
         border: none;
-        background-color: var(--color-grey-light-2);  
-        // transform: translate(3rem, 0);
-
+        background-color: var(--color-grey-light-2); 
+        
         &:focus {
             outline: none;
         }

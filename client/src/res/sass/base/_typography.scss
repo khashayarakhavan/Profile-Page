@@ -22,16 +22,6 @@ body {
         animation-duration: 1s;
         animation-timing-function: ease-out;
         
-        @include respond(tab-port) {
-        font-size: 3rem;
-        letter-spacing: 2.5rem;
-        }
-
-         @include respond(phone) {
-        font-size: 2.5rem;
-        letter-spacing: 1.5rem;
-        }
-
         /*
         animation-delay: 3s;
         animation-iteration-count: 3;
@@ -46,9 +36,6 @@ body {
         letter-spacing: 1.75rem;
         animation: moveInRight 1s ease-out;
 
-        @include respond(phone) {
-        letter-spacing: 1rem;
-        }
     }
 }
 
@@ -64,14 +51,6 @@ body {
     letter-spacing: .2rem;
     transition: all .2s;
 
-    @include respond(tab-port) {
-        font-size: 3rem;
-        }
-
-    @include respond(phone) {
-        font-size: 2.5rem;
-        }
-
     &:hover {
         transform: skewX(-5deg)  scale(1.05);
         text-shadow: .5rem 1rem 2rem rgba($color-black, .2);
@@ -82,14 +61,6 @@ body {
     font-size: $default-font-size;
     font-weight: 700;
     text-transform: uppercase;
-    @include respond(tab-port) {
-        font-size: 1.1rem;
-        }
-
-    @include respond(phone) {
-        font-size: 0.6rem;
-        }
-}
 
 .paragraph {
     font-size: $default-font-size;
@@ -97,4 +68,5 @@ body {
     &:not(:last-child) {
         margin-bottom: 3rem;
     }
+}
 }
